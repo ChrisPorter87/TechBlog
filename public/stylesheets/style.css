@@ -1,8 +1,14 @@
 * {
   box-sizing: border-box;
 }
-
-body, html {
+.title {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+body,
+html {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -12,22 +18,26 @@ body, html {
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: #145a32;
   font-weight: bold;
-  transition: color .1s;
+  transition: color 0.1s;
+  text-align: center;
+  font-family: Abril Fatface, cursive;
 }
 
 a:hover {
   color: #3486eb;
 }
-
+body {
+  font-family: Abril Fatface, cursive;
+}
 button {
   background-color: #225ca3;
   border: 0;
   padding: 1%;
   color: white;
   font-weight: bold;
-  transition: background-color .1s;
+  transition: background-color 0.1s;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -41,13 +51,15 @@ button:hover {
   padding: 0;
 }
 
-textarea, input {
-  padding: .5%;
+textarea,
+input {
+  padding: 0.5%;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   outline: none;
   border: 1px solid #3486eb;
 }
@@ -72,18 +84,18 @@ form label {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  background-color: #f39c12;
 }
 
 header {
-  border-bottom: 1px solid #ccc;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 5em;
+  text-align: center;
 }
 
 main {
@@ -97,11 +109,12 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #145a32;
   font-size: 100%;
   font-weight: bold;
-  transition: color .1s;
+  transition: color 0.1s;
   margin-left: 16px;
+  font-family: Abril Fatface, cursive;
 }
 
 .btn-no-style:hover {
@@ -120,6 +133,8 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  background-color: #fad7a0;
+  border: #145a32 solid 3px;
 }
 
 .post .title span {
@@ -133,15 +148,6 @@ main {
   margin: -1.5% 0 2% 0;
 }
 
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color .1s;
-}
-
-.upvote-btn:hover {
-  background-color: #1f9c13;
-}
-
 .comment-form {
   margin-bottom: 5%;
 }
@@ -149,6 +155,7 @@ main {
 .comment {
   padding: 1%;
   margin-bottom: 1%;
+  color: #7d7d7d;
 }
 
 .comment:nth-child(odd) {
@@ -157,8 +164,8 @@ main {
 
 .comment .meta {
   font-size: 90%;
-  margin-bottom: .5%;
-  opacity: .6;
+  margin-bottom: 0.5%;
+  opacity: 0.6;
 }
 
 .new-post-form input {
@@ -175,4 +182,9 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+}
+.head {
+  background-color: #f39c12;
+  padding: 1%;
+  border-bottom: 1px solid #ccc;
 }
